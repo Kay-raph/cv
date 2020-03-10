@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+}
+#vid{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.nav{
+    background-color: darkgray;
+    height: 50px;
+    margin: 0;
+}
+.nav img{
+    width: 25px;
+    float: right;
+    margin: 5px;
+}
+.container{
+  margin-right: 150px;
+  margin-left: 80px;
+}
+.helo{
+    text-align: center;
+    color: white;
+
+}
+hr{
+    display: flex;
+     border: none;
+    border-top: 3px double rgb(226, 226, 226);
+    color: rgb(235, 229, 229);
+    overflow: visible;
+    height: 5px;
+    text-align: center;
+}
+.me{
+    display: flex;
+    text-align: center;
+    color: white;
+   justify-content: space-between;
+   
+}
+.about{
+   box-shadow: 6px 6px darkgray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.skill{
+    box-shadow: 6px 6px darkgray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.project{
+    box-shadow: 6px 6px darkgray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media screen and (width: 500px) {
+  
+  .container{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .nav{
+      height: 25px;
+      background-color: wheat;
+  }
+  .nav img{
+    width: 18px;
+    float: right;
+    margin: 2px;
+}
+.helo h2{
+    font-size: large;
+}
+.me h1{
+    font-size: large;
+}
+}
