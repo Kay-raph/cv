@@ -443,35 +443,36 @@ h4{
   
   .proj h1{
 font-size: small;
-font-weight: 800;
+font-weight: bold;
   }
   .skils h1{
 font-size: small;
-font-weight: 800;
+font-weight: bold;
   }
   .bot h1{
 font-size: small;
-font-weight: 800;
+font-weight: bold;
   }
   .hob{
       text-align: justify;
       color: white;
    font-size: small;
-font-weight: 800;   
+font-weight: bold;   
   }
   .con{
         text-align: justify;
       color: white;
    font-size: small;
-font-weight: 800;    
+font-weight: bold;    
   }
  .designer p{
      font-size: smaller;
-     margin-left: 50px;
+     margin: 0px;
      text-align: center;
      transition: 1s;
 }
 .designer:hover p{
+    text-align: center;
      font-weight: bold;
      transform: scale(1.1);
      -webkit-transform: scale(1.1);
