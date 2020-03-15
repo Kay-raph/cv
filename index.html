@@ -7,8 +7,8 @@
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bevan|Boogaloo|Bowlby+One+SC|Caveat+Brush|Changa+One|Chewy|Concert+One|Fredoka+One|Kumar+One|Lilita+One|Monoton|Nanum+Pen+Script|Patrick+Hand|Permanent+Marker|Rock+Salt|Rubik+Mono+One|Seymour+One|Sigmar+One|Special+Elite|Titan+One|Ultra&display=swap"
         rel="stylesheet">
@@ -17,41 +17,57 @@
         rel="stylesheet">
     <link href="css\style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="soc\github.png">
-    <script src="js\script.js"></script>
+    <script src="scripts.js"></script>
     <title>Portfolio</title>
 </head>
-
+<style>
+   body,html {
+ margin: 0;
+            background-image: url("img/bck.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+</style>
 <body>
     <video autoplay loop muted id="vid">
-        <source src="videos\4K1.mp4" type="video/mp4">
+        <source src="videos\4K2.mp4" type="video/mp4">
     </video>
     <div class="nav">
-        <a href="www.github.io/kay-raph.com"><img src="soc\github.png"></a>
-        <a href="#"><img src="soc\pinterest.png"></a>
-        <a href="#"><img src="soc\meetup.png"></a>
-        <a href="#"><img src="soc\twitter.png"></a>
-        <a href="#"><img src="soc\inst.png"></a>
-        <a href="#"><img src="soc\facebook.png"></a>
+    <a href="index.html"><p style="float: left;color: white;">HOME</p></a>
+        <a href="www.github.io/kay-raph/"><img src="soc\github.png"></a>
+        <a href="www.pinterest.com/kayraph/"><img src="soc\pinterest.png"></a>
+        <a href="www.meetup.com/kayraph/"><img src="soc\meetup.png"></a>
+        <a href="www.twitter.com/codepapa/"><img src="soc\twitter.png"></a>
+        <a href="www.instagram.com/kayraph_illest/"><img src="soc\inst.png"></a>
+        <a href="www.facebook.com/kayraph/"><img src="soc\facebook.png"></a>
     </div>
     <div class="container" id="cont">
-      
+      <br><br><br><br><br>
        <div class="helo">
-           <h2><b>Hello there.<br>I am Kevin Raphael Mugita.<br>A Software Engineer.</b></h2>
+           <h2 id="hh2"><span class="heloo" style="font-size: 2em;"><b>Hello there.<br>I am Kevin Raphael Mugita.</span><br><span class="st" style="font-style: italic; color: wheat;">A software engineer from nairobi Kenya.</span></b></h2>
        </div>
 <hr>
         <div class="me">
         <div class="about">
-            <h1><b>About Me</b></h1>
+            <a href="about.html"><h1><b>About Me</b></h1></a>
         </div>
-        <div class="skill">
-            <h1><b>Skills and Expertise</b></h1>
+        <div class="skills">
+            <a href="skills.html"><h1><b>Skills and Expertise</b></h1></a>
         </div>
         <div class="project">
-            <h1><b>Recent Projects</b></h1>
+            <a href="projects.html"><h1><b>Recent Projects</b></h1></a>
         </div>
+    </div><br>
+    <hr><br><br>
+    <div class="designs">
+    <a style="text-decoration: none;" href="design.html"><p style="color: crimson; font-style: italic; font-size: 2em;">Graphics & Design</p></a>
     </div>
 </div>
-
+<div class="footer">
+    <p>&copy 2020|All rights reserved|Designed by kevin raphael</p>
+</div>
 </body>
 
 </html>

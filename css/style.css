@@ -1,34 +1,68 @@
-body{
-    margin: 0px;
-}
+
 #vid{
+    display: none;
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect;
+    animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect {
+    /* for Safari 4.0 - 8.0*/
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
 .nav{
-    background-color: darkgray;
+    background-color: black;
     height: 50px;
-    margin: 0;
+    margin: 10;
+    position: fixed;
+    width: 100%;
 }
 .nav img{
     width: 25px;
     float: right;
     margin: 5px;
 }
+.nav p{
+    margin: 5px;
+    font-size: 2em;
+    font-weight: bolder;
+}
 .container{
-  margin-right: 150px;
+  margin-right: 100px;
   margin-left: 80px;
 }
 .helo{
-    text-align: center;
+    text-align: justify;
     color: white;
-
 }
 hr{
     display: flex;
@@ -39,56 +73,444 @@ hr{
     height: 5px;
     text-align: center;
 }
+h4{
+    text-align: center;
+    color: honeydew;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    box-shadow: 0 0 25px black;
+    background-color: darkgray;
+    border-radius: 15px;
+    padding: 10px 0px;
+    width: 100px;
+}
 .me{
     display: flex;
     text-align: center;
     color: white;
    justify-content: space-between;
    
+   
+}
+.about a{
+    text-decoration: none;
+    color: white;
+   
+}
+.about:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .about{
    box-shadow: 6px 6px darkgray;
     border-radius: 10px;
+    padding: 6px;
+     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.skill{
+.skills a{
+    text-decoration: none;
+    color: white;
+}
+.skills{
     box-shadow: 6px 6px darkgray;
     border-radius: 10px;
+    padding: 6px;
+     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+.skills:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.skils{
+     box-shadow: 6px 6px darkgray;
+    border-radius: 10px;
+    background-color: wheat;
+    margin-left: 30%;
+    width: 40%;
+    padding: 6px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.project a{
+    text-decoration: none;
+    color: white;
 }
 .project{
     box-shadow: 6px 6px darkgray;
     border-radius: 10px;
+    padding: 6px;
+     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-@media screen and (width: 500px) {
-  
+.project:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.bot{
+      box-shadow: 6px 6px darkgray;
+    border-radius: 10px;
+    background-color: wheat;
+    margin-left: 40%;
+    width: 20%;
+    padding: 6px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.proj{
+      box-shadow: 6px 6px darkgray;
+    border-radius: 10px;
+    background-color: wheat;
+    margin-left: 30%;
+    width: 35%;
+    padding: 3px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.skill {
+    text-align: center;
+    margin: 0px;
+}
+
+.exp {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 25px black;
+    background-color: wheat;
+    border-radius: 25px;
+}
+
+.exp:hover {
+    background-color: darkgrey;
+}
+
+.dev {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 25px black;
+    background-color: wheat;
+    border-radius: 25px;
+}
+
+.dev:hover {
+    background-color: darkgrey;
+}
+
+.grap {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 25px black;
+    background-color: wheat;
+    border-radius: 25px;
+}
+
+.grap:hover {
+    background-color: darkgrey;
+}
+
+.ex {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 25px black;
+    background-color: wheat;
+    border-radius: 25px;
+}
+
+.ex:hover {
+    background-color: darkgrey;
+}
+
+.dj {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 25px black;
+    background-color: wheat;
+    border-radius: 25px;
+}
+
+.dj:hover {
+    background-color: darkgrey;
+}
+
+.loops {
+    display: inline-block;
+    width: 40%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 25px black;
+    background-color: wheat;
+    border-radius: 25px;
+}
+
+.loops:hover {
+    background-color: darkgrey;
+}
+.designs{
+    text-align: center;
+    transition: 1s;
+}
+.designs:hover{
+     font-weight: 990;
+     transform: scale(1.5);
+     -webkit-transform: scale(1.5);
+     -moz-transform: scale(1.5);
+     -ms-transform: scale(1.5);
+     -o-transform: scale(1.5);
+}
+.column {
+    display: inline-block;
+    margin: 50px;
+    width: 35%;
+    
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mgs {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5%;
+    text-align: center;
+    box-shadow: 0 0 0px black;
+    background-color: transparent;
+    border-radius: 25px;
+}
+/*flipcards for recent projects*/
+.flip-card {
+    margin-left: 60px;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transition-delay: 0.6s;
+    display: inline-block;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: wheat;
+
+}
+
+.flip-card-back {
+    background-color: black;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    width: 100%;
+}
+.footer p{
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 754px) {
+   #hh2{
+        font-size: medium;
+    }
+    #vid{
+        display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
   .container{
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
   }
   .nav{
       height: 25px;
-      background-color: wheat;
+      background-color: darkgrey;
   }
+.footer{
+    background-color: darkgrey;
+}
   .nav img{
     width: 18px;
     float: right;
     margin: 2px;
+}
+.nav p{
+    font-size: small;
 }
 .helo h2{
     font-size: large;
 }
 .me h1{
     font-size: large;
+}
+.exp,
+ .dev,
+ .ex,
+.grap,
+ .dj,
+  .loops{
+      width: 90%;
+  }
+  
+  .proj h1{
+font-size: small;
+font-weight: 800;
+  }
+  .skils h1{
+font-size: small;
+font-weight: 800;
+  }
+  .bot h1{
+font-size: small;
+font-weight: 800;
+  }
+  .hob{
+      text-align: justify;
+      color: white;
+   font-size: small;
+font-weight: 800;   
+  }
+  .con{
+        text-align: justify;
+      color: white;
+   font-size: small;
+font-weight: 800;    
+  }
+ .designs{
+     font-size: small;
+    text-align: center;
+    transition: 1s;
+}
+.designs:hover{
+     font-weight: 990;
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+}
+  .column {
+       width: 50%;
+       display: inline-block;
+       margin-right: 150px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mgs {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 20%;
+    text-align: center;
+    box-shadow: 0 0 0px black;
+    background-color: transparent;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.flip-card {
+    margin-left: 100px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    perspective: 1000px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 }
