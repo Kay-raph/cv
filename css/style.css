@@ -461,20 +461,13 @@ font-weight: 800;
    font-size: small;
 font-weight: 800;    
   }
- .designer{
+ .designer p{
      font-size: small;
-     box-shadow: 3px 3px;
-     width: 50%;
-     border-radius: 10px;
      margin-left: 50px;
      text-align: center;
      transition: 1s;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     -o-border-radius: 10px;
 }
-.designer:hover{
+.designer:hover p{
      font-weight: bold;
      transform: scale(1.1);
      -webkit-transform: scale(1.1);
@@ -483,9 +476,9 @@ font-weight: 800;
      -o-transform: scale(1.1);
 }
   .column {
-       width: 50%;
+       width: 70%;
        display: inline-block;
-       margin-right: 150px;
+       margin: 0px;
 }
 
 .row::after {
