@@ -500,7 +500,7 @@ font-weight: 800;
     -o-border-radius: 25px;
 }
 .flip-card {
-    margin-left: 100px;
+    margin-left: 0px;
     padding: 20px;
     width: 400px;
     height: 200px;
