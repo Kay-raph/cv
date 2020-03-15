@@ -298,11 +298,11 @@ h4{
 .loops:hover {
     background-color: darkgrey;
 }
-.designs{
+.designer{
     text-align: center;
     transition: 1s;
 }
-.designs:hover{
+.designer:hover{
      font-weight: 990;
      transform: scale(1.5);
      -webkit-transform: scale(1.5);
@@ -461,12 +461,12 @@ font-weight: 800;
    font-size: small;
 font-weight: 800;    
   }
- .designs{
+ .designer{
      font-size: small;
     text-align: center;
     transition: 1s;
 }
-.designs:hover{
+.designer:hover{
      font-weight: 990;
      transform: scale(1.1);
      -webkit-transform: scale(1.1);
@@ -500,10 +500,11 @@ font-weight: 800;
     -o-border-radius: 25px;
 }
 .flip-card {
-    margin-left: 0px;
+    margin: 0px;
+    align-items: center;
     padding: 20px;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     perspective: 1000px;
     border-radius: 15px;
     display: inline-block;
