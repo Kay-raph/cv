@@ -466,7 +466,7 @@ font-weight: 800;
      box-shadow: 3px 3px;
      width: 50%;
      border-radius: 10px;
-     margin-left: 150px;
+     margin-left: 100px;
      text-align: center;
      transition: 1s;
      -webkit-border-radius: 10px;
@@ -494,10 +494,11 @@ font-weight: 800;
     clear: both;
 }
 
-.mgs {
+.mgs img{
     display: inline-block;
     padding: 5px 15px;
     margin-left: 20%;
+    width: 50%;
     text-align: center;
     box-shadow: 0 0 0px black;
     background-color: transparent;
@@ -511,7 +512,7 @@ font-weight: 800;
     margin: 0px;
     align-items: center;
     padding: 20px;
-    width: 90%;
+    width: 100%;
     height: 300px;
     perspective: 1000px;
     border-radius: 15px;
