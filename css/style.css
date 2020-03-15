@@ -463,11 +463,19 @@ font-weight: 800;
   }
  .designer{
      font-size: small;
-    text-align: center;
-    transition: 1s;
+     box-shadow: 3px 3px;
+     width: 50%;
+     border-radius: 10px;
+     margin-left: 150px;
+     text-align: center;
+     transition: 1s;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
 }
 .designer:hover{
-     font-weight: 990;
+     font-weight: bolder;
      transform: scale(1.1);
      -webkit-transform: scale(1.1);
      -moz-transform: scale(1.1);
