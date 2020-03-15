@@ -298,11 +298,15 @@ h4{
 .loops:hover {
     background-color: darkgrey;
 }
-.designer{
+.designer p{
     text-align: center;
-    transition: 1s;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
 }
-.designer:hover{
+.designer:hover p{
      font-weight: 990;
      transform: scale(1.5);
      -webkit-transform: scale(1.5);
@@ -462,7 +466,7 @@ font-weight: 800;
 font-weight: 800;    
   }
  .designer p{
-     font-size: small;
+     font-size: smaller;
      margin-left: 50px;
      text-align: center;
      transition: 1s;
