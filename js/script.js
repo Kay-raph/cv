@@ -1,16 +1,16 @@
 
-$(document).ready(function () {
+ $(document).ready(function () {
     $(".exp p1").hide();
-    $(".exp").click(function () {
-        $(".exp p1").toggle(1000);
-        $(".exp #mg1").slideDown(1000).show(1000);
+   $(".exp").click(function () {
+      $(".exp p1").toggle(1000);
+      $(".exp #mg1").slideDown(1000).show(1000);
     });
-    // $(document).ready(function(){
-    //     $("img").click(function(){
-    //       $("img").slideDown(200).hide(1000);
-    //       $("p1").slideUp(200).show(1000);
-    //       $("img").toggle();
-    //   });
+// $(document).ready(function(){
+//     $("img").click(function(){
+//       $("img").slideDown(200).hide(1000);
+//       $("p1").slideUp(200).show(1000);
+//       $("img").toggle();
+//   });
 
     $(".dev p2").hide();
     $(".dev").click(function () {
@@ -44,5 +44,5 @@ $(document).ready(function () {
         $(".hobby .int").toggle(1000);
         $(".hobby").slideUp(1000).show(1000);;
     });
-})
+});
 
