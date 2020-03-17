@@ -231,7 +231,7 @@ h4{
     background-color: darkgrey;
 }
 
-.ex {
+/* .ex {
     display: inline-block;
     width: 40%;
     padding: 30px 10px;
@@ -274,7 +274,7 @@ h4{
 
 .loops:hover {
     background-color: darkgrey;
-}
+} */
  p1 {
     display: none;
     text-align: center;
