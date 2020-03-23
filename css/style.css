@@ -414,6 +414,20 @@ p6 {
     -o-transform: rotateY(180deg);
 }
 /*END OF FLIPCARDS*/
+.pdf a{
+    text-decoration: none;
+    color: #ffffff;
+     transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+   }
+.pdf a:hover{
+    color: #0d8df0;
+    text-transform: uppercase;
+    text-shadow: solid wheat;
+}
 .footer{
     position: fixed;
     bottom: 0px;
