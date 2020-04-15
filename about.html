@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="css\bootstrap.css"></script>
     <link
         href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bevan|Boogaloo|Bowlby+One+SC|Caveat+Brush|Changa+One|Chewy|Concert+One|Fredoka+One|Kumar+One|Lilita+One|Monoton|Nanum+Pen+Script|Patrick+Hand|Permanent+Marker|Rock+Salt|Rubik+Mono+One|Seymour+One|Sigmar+One|Special+Elite|Titan+One|Ultra&display=swap"
         rel="stylesheet">
@@ -14,14 +15,14 @@
         rel="stylesheet">
     <link href="css\style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="mydesigns/kay(unbeatable) (2).png">
-    <script src="js\script.js"></script>
+    <script src="script.js"></script>
     <title>about</title>
 </head>
 <style>
     body,
     html {
         margin: 0;
-            background-image: url("img/bck.jpg");
+            background-image: url("img/drk.jpg");
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -60,29 +61,31 @@
         <p
             style="letter-spacing: 2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             <img src="soc\email.png" style="height: 25px;"><b style="font-size: x-large; color: aqua;">     Kevmugita@gmail.com</b><br><img src="soc\phone.png"
-                    style="height: 25px;"><b style="font-size: x-large;" >      0710288908</b>,<b style="font-size: x-large;">0736774779</b></p><br>
+                    style="height: 25px;"><b style="font-size: x-large;" >      0710288908</b><br><b style="font-size: x-large;"><img src="soc\phone.png" style="height: 25px;"> 0736774779</b></p><br>
             
         </div>
         <div class="educ">
             <h1 style="color: white;text-align: justify;"><u>Education</u></h1>
             <ul style="color: white;"><b>
-            <li style="font-size: x-large; color: wheat;">Moringa School.</li><p><b style="color: crimson;">Software Engineering</b> - November 2019 to January 2020(Certificate)</p>
+            <li style="font-size: x-large; color: wheat;">Moringa School.</li><p><b style="color: crimson;">Software Engineering</b> - November 2019 to January 2020</p>
             <li style="font-size: x-large; color: wheat;">eMobilis Institute of Technology.</li>
-            <p><b style="color: crimson; ">Mobile Application Development</b> - August 2016 to January 2017(Certificate)</p>
+            <p><b style="color: crimson; ">Mobile Application Development</b> - August 2016 to January 2017</p>
             <li style="font-size: x-large; color: wheat;">Jomo Kenyatta University of Technology & Agriculture.</li>
-            <p><b style="color: crimson;">Business Information Technology</b> - May 2014 to September 2015(Diploma)</p>
+            <p><b style="color: crimson;">Business Information Technology</b> - May 2014 to September 2015</p>
         </b></ul>
         </div>
         <div class="hob">
             
             <h1 style="color: white;text-align: justify;"><u>Hobbies & interests</u></h1>
-            <ul style="color: wheat;"><b>
-            <li>Travelling</li>
-            <li>Reading</li>
-            <li>Sci-fi Movies</li>
-            <li>General knowledge Research</li>
-            <li>Sports(Football, Basketball and Table tennis)</li>
-            <li>Computer Gaming and Coding</li></b>
+            <ul style="color: white;"><b>
+            <li id="cc"><img src="hobbies/com.png" style="height: 25px; width: 25px;"> Computer,Video Games and Coding</li><br>
+            <li id="tr"><img src="hobbies/fly.png" style="height: 25px; width: 25px;"> Travelling</li><br>
+            <li id="rd"><img src="hobbies/book.png" style="height: 25px; width: 25px;"> Reading</li><br>
+            <li id="ms"><img src="hobbies/drum.png" style="height: 25px; width: 25px;"> Music and Musical instruments(Guitar,Drumsets,Jimbi)</li><br>
+            <li id="sf"><img src="hobbies/scifi.png" style="height: 25px; width: 25px;"> Sci-fi Movies</li><br>
+            <li id="gn"><img src="hobbies/nerd.png" style="height: 25px; width: 25px;"> General knowledge Research</li><br>
+            <li id="sp"><img src="hobbies/game.png" style="height: 25px; width: 25px;"> Sports(Football, Basketball and Table tennis)</li>
+            </b>
             </ul>
         </div>
     <div class="bck"><a style="text-decoration: none;" href="index.html"><b>
@@ -94,7 +97,45 @@
     <br><br><br>
     </div>
     <div class="footer">
-        <p>&copy 2020|All rights reserved|Designed by kevin raphael</p>
+        <p>&copy 2020|All rights reserved|Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a></p>
     </div>
+    /*FUN JS SCRIPT ON HOBBIES*/
+    <script>
+         $(document).ready(function () {
+                $("#cc").click(function () {
+                    alert("FIFA all the way....I love Visual studio code!!")
+         });
+         });
+         $(document).ready(function () {
+                $("#tr").click(function () {
+                    alert("Travelling relaxes my mind")
+         });
+         });
+         $(document).ready(function () {
+                $("#rd").click(function () {
+                    alert("Best read so far, 'THE TESTAMENT:John Grisham', 'THINK and GROW RICH:Napoleon Hill'.")
+         });
+         });
+         $(document).ready(function () {
+                $("#ms").click(function () {
+                    alert("Urban Pop and Trance....strumming guitar and thumping on drumsets is just wooow")
+         });
+         });
+         $(document).ready(function () {
+                $("#sf").click(function () {
+                    alert("Upgrade,Bloodshot,Lost in Space,Avengers series......ENDGAME")
+         });
+         });
+         $(document).ready(function () {
+                $("#gn").click(function () {
+                    alert("Google is my close friend")
+         });
+         });
+         $(document).ready(function () {
+                $("#sp").click(function () {
+                    alert("My favourite football team is Manchester united and favourite Basketball teams are L.A Lakers & Chicago bulls")
+         });
+         });
+    </script>
 </body>
 </html>

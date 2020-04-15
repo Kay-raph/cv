@@ -1,27 +1,19 @@
 
-#vid{
-    display: none;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-}
-
 .nav{
-    background-color: #ffffff;
+    top: 0;
+    background-color: transparent;
     height: 50px;
     margin: 10;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 .nav img{
     width: 25px;
     float: right;
     margin: 8px;
+}
+.nav p:hover{
+    color: white;
 }
 .nav p{
     color: #0d8df0;
@@ -32,9 +24,10 @@
 .container{
   margin-right: 100px;
   margin-left: 80px;
+  padding: 20px;
 }
 .helo{
-    text-align: justify;
+    text-align: center;
     color: #ffffff;
 }
 hr{
@@ -45,6 +38,9 @@ hr{
     overflow: visible;
     height: 5px;
     text-align: center;
+}
+h3{
+    color: red;
 }
 h4{
     text-align: center;
@@ -311,10 +307,10 @@ p6 {
    width: 150px;
    height: 150px;
     width: 20%;
-    margin-left: 450px;
+    margin-left: 10px;
     text-align: center;
-    box-shadow: 0 0 25px black;
-    background-color: white;
+    box-shadow: 0 0 5px white;
+    background-color: transparent;
     border-radius: 25px;
 }
 .designer:hover img{
@@ -431,42 +427,38 @@ p6 {
 .footer{
     position: fixed;
     bottom: 0px;
-    background-color: white;
+    background-color: transparent;
     width: 100%;
 }
 .footer p{
     text-align: center;
     color: #0d8df0;
-    padding: 8px;
+    padding: 5px;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: white;
 }
 @media screen and (max-width: 500px) {
    #hh2{
         font-size: medium;
-    }
-    #vid{
-        display: none;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-}
+   }
   .container{
       margin-left: 5px;
       margin-right: 5px;
   }
   .nav{
       height: 25px;
-      background-color: #000000;
+      background-color: transparent
   }
   .nav p{
       color: #ffffff;
   }
 .footer{
-    background-color: #000000;
+    background-color: transparent;
 }
 .footer p{
     color: #ffffff;
@@ -537,7 +529,7 @@ font-weight: bold;
 font-weight: bold;    
   }
  .designer img{
-    margin-left: 90px;
+    margin-left: 10px;
     width: 100px;
     height: 5%;
     box-shadow: 0 0 25px black;
