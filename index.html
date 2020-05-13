@@ -17,63 +17,299 @@
         href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
         rel="stylesheet">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="mydesigns/kay(unbeatable) (2).png">
+    <link rel="icon" href="icon icons/cv.png">
     <title>Portfolio</title>
 </head>
 <style>
-   body,html {
- margin: 0;
-            background-image: url("img/drk.jpg");
-            background-size: cover;
-            width: 100%;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    body
+    {
+    scroll-behavior: smooth;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: url("img/clint.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid aqua;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:-50px; opacity:0.5 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to { bottom:-50px; opacity:0.5 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
 }
 </style>
-<body>
+
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
     <div class="nav">
-    <a href="index.html"><p style="float: left;">HOME</p></a>
-        <a href="https://github.com/Kay-raph"><img src="soc\github.png"></a>
-        <a href="https://www.pinterest.com/kayraph/"><img src="soc\pinterest.png"></a>
-        <a href="https://www.meetup.com/kayraph/"><img src="soc\meetup.png"></a>
-        <a href="https://twitter.com/DjKay_25"><img src="soc\tweet.png"></a>
-        <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\inst.png"></a>
-        <a href="https://www.facebook.com/code.pappa.9"><img src="soc\facebook.png"></a>
+        <a href="index.html">
+            <p style="float: left;">HOME</p>
+        </a>
+        <a href="https://github.com/Kay-raph"><img src="soc\gthub.png"></a>
+        <a href="https://www.pinterest.com/kayraph/"><img src="soc\pint.png"></a>
+        <a href="https://linkedin.com/in/kevin-mugita-13848b154"><img src="soc\linkin.png"></a>
+        <a href="https://twitter.com/DjKay_25"><img src="soc\twee.png"></a>
+        <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\instag.png"></a>
+        <a href="https://www.facebook.com/code.pappa.9"><img src="soc\face.png"></a>
     </div>
-    <div class="container" id="cont">
-       <div class="helo">
-           <h2 id="hh2"><span class="heloo" style="font-size: 2em;"><b>I am Kevin Raphael Mugita.</span><br><span class="st" style="font-style: italic; color: wheat;">A software engineer from nairobi Kenya.</span></b></h2>
-       </div>
-<hr style="width: 600px;">
-        <div class="me">
-        <div class="about">
-            <a href="about.html"><h1><b>About me</b></h1></a>
+    <div class="container" id="cont"><br>
+        <div class="helo">
+            <h2 id="hh2"><span class="heloo" style="font-size: 2em;"><b>I am Kevin Raphael Mugita.</span><br><span
+                    class="st" style="font-style: italic; color: wheat;">A software engineer from nairobi
+                    Kenya.</span></b></h2>
         </div>
-        <div class="skills">
-            <a href="skills.html"><h1><b>What i can do</b></h1></a>
-        </div>
-        <div class="project">
-            <a href="projects.html"><h1><b>My recent projects</b></h1></a>
-        </div>
-    </div><br>
-    <hr>
-    <div class="designer">
+        <hr>
         <center>
-    <a style="text-decoration: none;" href="design.html"><img src="mydesigns/mylogos.png"></a>
-    </center>
-    </div><br>
-    <hr>
-    <div class="pdf">
-        <a href="cv.html"><p><b><img src="icon icons/doc1.png" style="width: 25px; height: 25px;">Link to my CV</b></p></a>
+        <div class="me">
+            <div class="about">
+                <a href="about.html">
+                    <h1><b>About me</b></h1>
+                </a>
+            </div>
+            <div class="skills">
+                <a href="skills.html">
+                    <h1><b>What i can do</b></h1>
+                </a>
+            </div>
+            <div class="project">
+                <a href="projects.html">
+                    <h1><b>My recent projects</b></h1>
+                </a>
+            </div>
+        </div>
+        </center><br>
+        <hr>
+        <div class="designer">
+            <center>
+                <a style="text-decoration: none;" href="design.html"><img src="mydesigns/mylogos.png"></a>
+            </center>
+            <hr>
+        </div>
+        <!-- /*SKILSS BAR*/ -->
+        <h1 style="font-size: 3vw; color: white;">Skills level</h1>
+        
+        <button id="bn" style="font-size: small; border-radius: 10px; background-color: crimson;  cursor: pointer;" onclick="move1()">HTML</button>
+        <div class="contain">
+            <div class="mys html" id="myBar1" style="width:0%">0%</div>
+        </div>
+       <script>
+        function move1() {
+            var elem = document.getElementById("myBar1");
+            var width = 0;
+            var id = setInterval(frame, 50);
+            function frame() {
+                if (width >= 93) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <br>
+    <button style="font-size: small; border-radius: 10px; background-color: #2196F3;" onclick="move2()">CSS</button>
+    <div class="contain">
+        <div class="mys css" id="myBar2" style="width:0%">0%</div>
     </div>
-</div>
-<div class="footer">
-    <p>&copy 2020|All rights reserved|Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a></p>
-</div>
-<script src="scripts.js"></script>
-<script>
-    
+    <script>
+        function move2() {
+            var elem = document.getElementById("myBar2");
+            var width = 0;
+            var id = setInterval(frame, 50);
+            function frame() {
+                if (width >= 88) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <br>
+    <button style="font-size: small; border-radius: 10px; background-color: red;" onclick="move3()">JavaScript</button>
+    <div class="contain">
+        <div class="mys js" id="myBar3" style="width:0%">0%</div>
+    </div>
+    <script>
+        function move3() {
+            var elem = document.getElementById("myBar3");
+            var width = 0;
+            var id = setInterval(frame, 50);
+            function frame() {
+                if (width >= 76) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <br>
+    <button style="font-size: small; border-radius: 10px; background-color: blue;" onclick="move4()">PHP</button>
+    <div class="contain">
+        <div class="mys php" id="myBar4" style="width:0%">0%</div>
+    </div>
+    <script>
+        function move4() {
+            var elem = document.getElementById("myBar4");
+            var width = 0;
+            var id = setInterval(frame, 50);
+            function frame() {
+                if (width >= 62) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <br>
+    <button style="font-size: small; border-radius: 10px; background-color: blue;" onclick="move5()">Java</button>
+    <div class="contain">
+        <div class="mys java" id="myBar5" style="width:0%">0%</div>
+    </div>
+    <script>
+        function move5() {
+            var elem = document.getElementById("myBar5");
+            var width = 0;
+            var id = setInterval(frame, 50);
+            function frame() {
+                if (width >= 69) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script> 
+           <style>
+            
+            .contain {
+                margin: 5px;
+                width: 100%;
+                background-color: #ddd;
+                box-shadow: 0 0 0 2px darkgrey;
+                border-radius: 5px;
+            }
+        
+            .mys {
+                border-radius: 10px 0px 0px 10px;
+                text-align: right;
+                padding-right: 20px;
+                line-height: 10px;
+                color: white;
+                font-size: x-small;
+            }
+        #bn:hover{
+            opacity: 0.5;
+        }
+            .html {
+                /* width: 93%; */
+                background-color: crimson;
+            }
+        
+            .css {
+                /* width: 85%; */
+                background-color: #2196F3;
+            }
+        
+            .js {
+                /* width: 67%; */
+                background-color: red;
+            }
+        
+            .php {
+                /* width: 60%; */
+                background-color: blue;
+            }
+        
+            .java {
+                /* width: 69%; */
+                background-color: purple;
+            }
+        </style>
+        <br>
+        <hr>
+        <div class="pdf">
+            <a href="cv.html">
+                <p><b><img src="icon icons/doc1.png" style="width: 25px; height: 25px;">Link to my CV</b></p>
+            </a>
+        </div><br><br>
+    </div>
+    <script>
+
         $(document).ready(function () {
             $(".exp p1").hide();
             $(".exp").click(function () {
@@ -120,7 +356,34 @@
                 $(".hobby").slideUp(1000).show(1000);;
             });
         });
-</script>
+    </script>
+    <!-- CHATBOX -->
+    <button class="open-button" id="open-button" onclick="openform()"><img src="icons/email.png" height="20px"></button>
+    <div class="chat-popup" id="myform">
+        <form class='form-container' action="https://gmail.us4.list-manage.com/subscribe/post?u=d5eb79108d5fd1b601ae1d1f0&amp;id=9e70a2b742"
+            method="post"  name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <label for="msg"><b>Message</b></label><br>
+            <textarea placeholder="type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+        </form>
+    </div>
+    
+    <script>
+        /*CHATBOX*/
+            function openform() {
+                document.getElementById("myform").style.display = "block";
+            }
+            function closeform() {
+                document.getElementById("myform").style.display = "none";
+            }
+    </script>
+    <div class="footer">
+        <p>&copy 2019-2020 | All rights reserved | Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a></p>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+
 </body>
 
 </html>

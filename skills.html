@@ -14,13 +14,30 @@
         href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
         rel="stylesheet">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="mydesigns/kay(unbeatable) (2).png">
+    <link rel="icon" href="icon icons/cv.png">
     <script src="js\script.js"></script>
     <title>skills</title>
 </head>
+<script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt1').innerHTML =
+            h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) { i = "0" + i }; // add zero in front of numbers < 10
+        return i;
+    }
+</script>
 <style>
-    body,
-    html {
+    body
+    {
         margin: 0;
             background-image: url("img/bck.jpg");
             background-size: cover;
@@ -29,18 +46,65 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             ;
     }
+    /* Add animation to "page content" */
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:-50px; opacity:0.5 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to { bottom:-50px; opacity:0.5 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+ #txt1{
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        padding: 3px;
+        width: 70px;
+        border-radius: 5px;
+    color: #2196F3;
+     font-weight: bolder;
+    margin: auto;
+}
 </style>
-<body>
+
+<body onload="startTime()" style="margin:0;">
+    <!-- <div style="display:none;" id="myDiv" class="animate-bottom"> -->
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 500);
+            }
+
+            function showPage() {
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
     <div class="nav">
         <a href="index.html">
             <p style="float: left;">HOME</p>
         </a>
-        <a href="https://github.com/Kay-raph"><img src="soc\github.png"></a>
-        <a href="https://www.pinterest.com/kayraph/"><img src="soc\pinterest.png"></a>
-        <a href="https://www.meetup.com/kayraph/"><img src="soc\meetup.png"></a>
-        <a href="https://twitter.com/DjKay_25"><img src="soc\twitter.png"></a>
-        <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\inst.png"></a>
-        <a href="https://www.facebook.com/code.pappa.9"><img src="soc\facebook.png"></a>
+        <a href="https://github.com/Kay-raph"><img src="soc\gthub.png"></a>
+        <a href="https://www.pinterest.com/kayraph/"><img src="soc\pint.png"></a>
+        <a href="https://linkedin.com/in/kevin-mugita-13848b154"><img src="soc\linkin.png"></a>
+        <a href="https://twitter.com/DjKay_25"><img src="soc\twee.png"></a>
+        <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\instag.png"></a>
+        <a href="https://www.facebook.com/code.pappa.9"><img src="soc\face.png"></a>
     </div>
     <div class="container">
         <br><br>
@@ -110,22 +174,22 @@
                 </ul>
             </b><br><a href="design.html">Some of my recent Designs are found HERE!!</a></p3>
     </div>
-    <div class="grap">
+    <div class="ex">
         <img src="icon icons\wix.ico" id="mg4" style="height: 110px;">
         <h3>CONTENT  MANAGEMENT<br> SYSTEMS</h3>
-        <p3 style="text-align:center;">Using Word Press and Wixx,i can develop industry level web applications.<br>These are the tools i
+        <p4 style="text-align:center;">Using Word Press and Wixx,i can develop industry level web applications.<br>These are the tools i
             use;<br><b style="color: crimson;">
                 <ul style="text-align: left;">
                     <li>Wordpress</li>
                     <li>Wix site</li>
                     <li>?joomla(currently studying)</li>
                 </ul>
-            </b><br><a href="https://www.nyaligolf.com">Some of my recent works are found HERE!!</a></p3>
+            </b><br><a href="https://www.nyaligolf.com">Some of my recent works are found HERE!!</a></p4>
     </div>
-    <!-- <div class="ex">
+    <div class="exe">
         <img src="skills\Icons8-Ios7-Logos-Excel-Copyrighted.ico" id="mg5" style="height: 100px;">
         <h3>ADVANCED <br>EXCEL</h3>
-        <p4><b style="color: cornflowerblue;">Sales Agent(Data Entry using Microsoft EXCEL) at Safaricom
+        <p5><b style="color: cornflowerblue;">Sales Agent(Data Entry using Microsoft EXCEL) at Safaricom
                 Customer Care, Kitale August 2010 – May 2011</b> <br><br> As sales agent, I represented the face
             of Safaricom to Kitale’s diverse existing and prospective customers. I developed skills in
             product pitch and customer service while assisting to:
@@ -136,13 +200,13 @@
             marketing support to the customer care centre </li>
             <li> Support associates in client registration
             and Data Entry services ensuring reliable and effective customer service delivery</b></li> 
-        </ul></p4>
-    </div> -->
-    <!-- <div class="dj">
+        </ul></p5>
+    </div>
+    <div class="dj">
         <img src="skills\Icons8-Windows-8-Music-Dj.ico" id="mg6" style="height: 100px;">
         <h3>DISC<br> JOCKEY</h3>
-        <p5><b style="color: cornflowerblue;">DJ at Kitale Golf club,The places Club,5GB Sports Club &
-                Lounge, Kitale December2014– September 2016 </b> <br> As DJ and entrepreneur, I managed the
+        <p6><b style="color: cornflowerblue;">DJ at Kitale Golf club,The places Club,5GB Sports Club &
+                Lounge, Kitale December2014– September 2019 </b> <br> As DJ and entrepreneur, I managed the
             entertainment for several leading clubs in Kitale. <br>Detailed responsibilities and outcomes
             included: <br>• Managed audience entertainment needs, and tailored performance to meet
             expectations thus increasing patron/ audience attendance in the respective clubs, by up to 50%
@@ -155,12 +219,12 @@
             scheduled playlists based on demand and taste of youthful audience <br> • Supported talk show
             programs including on issues related to youth development.<br>
             Links to some of my music mixxes are found here <a href="https://www.mixcloud.com/kayraph">mixcloud</a>
-        </p5>
-    </div> -->
-    <!-- <div class="loops">
+        </p6>
+    </div>
+    <div class="loops">
         <img src="skills\177-1776995_fl-studio-fl-studio-logo-png.png" id="mg7" style="height: 60px;">
         <h3>VEGAS <br>& <br>FRUITY LOOPS</h3>
-        <p6 style="text-align: center; color: cornflowerblue;">Tremendous Knowledge in these Music softwares and hardwares;<br>
+        <p7 style="text-align: center; color: cornflowerblue;">Tremendous Knowledge in these Music softwares and hardwares;<br>
             <ul style="text-align: left;">
                 <li><b style="color: crimson;">Serato Dj(can play music using almost all pioneer and
                         numark cdjs and dj controllers)</li><br>
@@ -175,16 +239,176 @@
                 <li>Ableton.</li>
             </ul><br></b>
             Links to some of my music mixxes are found here <a href="https://www.mixcloud.com/kayraph">mixcloud</a>
-        </p6>
-    </div> -->
+            and <a href="https://hearthis.at/kayraph-qg">hearthis</a>
+        </p7>
+    </div>
+</div><br>
+<!-- /*SKILSS BAR*/ -->
+<h1 style="font-size: 5vw;">Skills level</h1>
+
+<button style="font-size: small; border-radius: 10px; background-color: crimson;" onclick="move1()">HTML</button>
+<div class="contain">
+    <div class="mys html" id="myBar1" style="width:0%">0%</div>
 </div>
+<script>
+    function move1() {
+        var elem = document.getElementById("myBar1");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if (width >= 93) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+</script>
+<br>
+<button style="font-size: small; border-radius: 10px; background-color: #2196F3;" onclick="move2()">CSS</button>
+<div class="contain">
+    <div class="mys css" id="myBar2" style="width:0%">0%</div>
+</div>
+<script>
+    function move2() {
+        var elem = document.getElementById("myBar2");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if (width >= 88) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+</script>
+<br>
+<button style="font-size: small; border-radius: 10px; background-color: red;" onclick="move3()">JavaScript</button>
+<div class="contain">
+    <div class="mys js" id="myBar3" style="width:0%">0%</div>
+</div>
+<script>
+    function move3() {
+        var elem = document.getElementById("myBar3");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if (width >= 76) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+</script>
+<br>
+<button style="font-size: small; border-radius: 10px; background-color: blue;" onclick="move4()">PHP</button>
+<div class="contain">
+    <div class="mys php" id="myBar4" style="width:0%">0%</div>
+</div>
+<script>
+    function move4() {
+        var elem = document.getElementById("myBar4");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if (width >= 62) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+</script>
+<br>
+<button style="font-size: small; border-radius: 10px; background-color: blue;" onclick="move5()">Java</button>
+<div class="contain">
+    <div class="mys java" id="myBar5" style="width:0%">0%</div>
+</div>
+<script>
+    function move5() {
+        var elem = document.getElementById("myBar5");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if (width >= 69) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+</script>
+<style>
+    h1 {
+        color: white;
+    }
+
+    .contain {
+        margin: 5px;
+        width: 100%;
+        background-color: #ddd;
+        box-shadow: 0 0 0 2px darkgrey;
+        border-radius: 5px;
+    }
+
+    .mys {
+        border-radius: 10px 0px 0px 10px;
+        text-align: right;
+        padding-right: 20px;
+        line-height: 10px;
+        color: white;
+        font-size: x-small;
+    }
+
+    .html {
+        /* width: 93%; */
+        background-color: crimson;
+    }
+
+    .css {
+        /* width: 85%; */
+        background-color: #2196F3;
+    }
+
+    .js {
+        /* width: 67%; */
+        background-color: red;
+    }
+
+    .php {
+        /* width: 60%; */
+        background-color: blue;
+    }
+
+    .java {
+        /* width: 69%; */
+        background-color: purple;
+    }
+</style>
+<br>
 <div class="bck"><a style="text-decoration: none;" href="about.html"><b>
             <h4>BACK</h4><a style="text-decoration: none;" href="projects.html"><h4>NEXT</h4></a>
         </b></a></div>
-       <br><br><br><br>
+       <br><br>
+       
 </div>
+<br><br>
 <div class="footer">
+    <div id="txt1"></div>
     <p>&copy 2020|All rights reserved|Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a></p>
+</div>
 </div>
 </body>
 

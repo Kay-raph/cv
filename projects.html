@@ -14,13 +14,13 @@
         href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
         rel="stylesheet">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="mydesigns/kay(unbeatable) (2).png">
+    <link rel="icon" href="icon icons/cv.png">
     <script src="js\script.js"></script>
     <title>recent projects</title>
 </head>
 <style>
-    body,
-    html {
+    body
+    {
         margin: 0;
         background-image: url("img/clint.jpg");
         background-size: cover;
@@ -30,38 +30,121 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         ;
     }
+    /* Add animation to "page content" */
+/* Add animation to "page content" */
+/* .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1.5s;
+  animation-name: animatebottom;
+  animation-duration: 1.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:-50px; opacity:0.5 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to { bottom:-50px; opacity:0.5 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+} */
+#txt1{
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        padding: 3px;
+        width: 70px;
+        border-radius: 5px;
+    color: #2196F3;
+     font-weight: bolder;
+    margin: auto;
+}
 </style>
 
-<body>
-    <div class="nav">
-        <a href="index.html">
-            <p style="float: left;">HOME</p>
-        </a>
-        <a href="https://github.com/Kay-raph"><img src="soc\github.png"></a>
-        <a href="https://www.pinterest.com/kayraph/"><img src="soc\pinterest.png"></a>
-        <a href="https://www.meetup.com/kayraph/"><img src="soc\meetup.png"></a>
-        <a href="https://twitter.com/DjKay_25"><img src="soc\twitter.png"></a>
-        <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\inst.png"></a>
-        <a href="https://www.facebook.com/code.pappa.9"><img src="soc\facebook.png"></a>
-    </div>
+<body onload="startTime()" style="margin:0;">
+    <!-- <div style="display:none;" id="myDiv" class="animate-bottom">
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 500);
+            }
+
+            function showPage() {
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script> -->
+        <script>
+           function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt1').innerHTML =
+                    h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i }; // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+<div class="nav">
+    <a href="index.html">
+        <p style="float: left;">HOME</p>
+    </a>
+    <a href="https://github.com/Kay-raph"><img src="soc\gthub.png"></a>
+    <a href="https://www.pinterest.com/kayraph/"><img src="soc\pint.png"></a>
+    <a href="https://linkedin.com/in/kevin-mugita-13848b154"><img src="soc\linkin.png"></a>
+    <a href="https://twitter.com/DjKay_25"><img src="soc\twee.png"></a>
+    <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\instag.png"></a>
+    <a href="https://www.facebook.com/code.pappa.9"><img src="soc\face.png"></a>
+</div>
     <div class="container">
-        <br><br>
+        <br><br><br><br>
         <div class="proj">
             <h1 style="text-align: center;">Recent projects</h1>
         </div><br><br>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front" style="border-radius: 25px;">
-                    <img src="projects/e-world-logo_poster_u58769.png" alt="Avatar"
-                        style="width:100px;height:50px; border-radius: 15px;">
+                    <img src="projects/chf.png" alt="Avatar"
+                        style="height:200px; border-radius: 15px;">
                 </div>
                 <div class="flip-card-back">
                     <h3 style="font-weight: bolder; letter-spacing: 2px;"><a style="text-decoration: none;color: red;"
-                            href="https://www.eworldcnet.com ">E-world Communications</a></h3>
+                            href="https://kay-raph.github.io/restdemo/ ">DEMO restaurant(open source)</a></h3>
                     <p style="letter-spacing: 2px; font-size: small; color: white;">
 
-                        A communication-based website
-                        This app utilizes;<p style="color: wheat;"> JavaScript and JavaScript forms, HTML, CSS,
+                        A restaurant DEMO website
+                        <br>It utilizes;<p style="color: wheat;"> JavaScript and JavaScript forms, HTML, CSS,
+                            Bootstrap and DOM
+                            elements
+                            that outputs to HTML canvas elements.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="border-radius: 25px;">
+                    <img src="projects/netvet.png" alt="Avatar"
+                        style="height:200px; border-radius: 15px;">
+                </div>
+                <div class="flip-card-back">
+                    <h3 style="font-weight: bolder; letter-spacing: 2px;"><a style="text-decoration: none;color: red;"
+                            href="https://kay-raph.github.io/Netvet-Clinic/ ">Net Vet Clinic</a></h3>
+                    <p style="letter-spacing: 2px; font-size: small; color: white;">
+
+                        An online veterinary website 
+                        <br>It utilizes;<p style="color: wheat;"> JavaScript and JavaScript forms, HTML, CSS,
                             Bootstrap and DOM
                             elements
                             that outputs to HTML canvas elements.
@@ -89,6 +172,7 @@
                 </div>
             </div>
         </div>
+        <br><br>
         <div class="flip-card">
 
             <div class="flip-card-inner">
@@ -115,7 +199,6 @@
                 </div>
             </div>
         </div>
-        <br><br><br>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front" style="border-radius: 25px;">
@@ -160,6 +243,7 @@
                 </div>
             </div>
         </div>
+        <br><br>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front" style="border-radius: 25px;">
@@ -181,7 +265,7 @@
                     </p>
                 </div>
             </div>
-        </div><br><br><br>
+        </div>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front" style="border-radius: 25px;">
@@ -206,7 +290,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front" style="border-radius: 25px;">
-                    <img src="projects\cdg22.png" style="width:150px;height:150px; border-radius: 15px;">
+                    <img src="projects\cg++.png" style="width:150px;height:150px; border-radius: 15px;">
                 </div>
                 <div class="flip-card-back">
                     <!-- https://www.eworldcnet.com -->
@@ -225,6 +309,7 @@
                 </div>
             </div>
         </div>
+        <br><br>
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front" style="border-radius: 25px;">
@@ -286,14 +371,17 @@
                 </div>
             </div>
         </div>
+    </div>
         <div class="bck"><a style="text-decoration: none;" href="skills.html"><b>
                     <h4>BACK</h4><a style="text-decoration: none;" href="design.html">
                         <h4>NEXT</h4>
                     </a>
-                </b></a></div><br><br><br>
+                </b></a></div><br><br>
     </div>
     <div class="footer">
+        <div id="txt1"></div>
         <p>&copy 2020|All rights reserved|Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a></p>
+    </div>
     </div>
 </body>
 

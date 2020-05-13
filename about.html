@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,128 +15,406 @@
         href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Anton|Baloo|Baloo+Bhai|Bowlby+One+SC|Calistoga|Concert+One|Fredoka+One|Fugaz+One|IBM+Plex+Mono|Modak|Pangolin|Rubik+Mono+One|Special+Elite|Varela+Round|Viga&display=swap"
         rel="stylesheet">
     <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="mydesigns/kay(unbeatable) (2).png">
-    <script src="script.js"></script>
+    <link rel="icon" href="icon icons/cv.png">
+    <script src="js\script.js"></script>
     <title>about</title>
 </head>
 <style>
-    body,
-    html {
+    body {
         margin: 0;
-            background-image: url("img/drk.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            ;
+        background-image: url("img/drk.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+
+    /* Add animation to "page content" */
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1.5s;
+        animation-name: animatebottom;
+        animation-duration: 1.5s
+    }
+
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+
+        to {
+            bottom: -50px;
+            opacity: 0.5
+        }
+
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+
+        to {
+            bottom: -50px;
+            opacity: 0.5
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    #myDiv {
+        display: none;
+    }
+     #txt1{
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        padding: 3px;
+        width: 70px;
+        border-radius: 5px;
+    color: #2196F3;
+     font-weight: bolder;
+    margin: auto;
+}
 </style>
-<body>
-   
-    <div class="nav">
-        <a href="index.html">
-            <p style="float: left;">HOME</p>
-        </a>
-        <a href="https://github.com/Kay-raph"><img src="soc\github.png"></a>
-        <a href="https://www.pinterest.com/kayraph/"><img src="soc\pinterest.png"></a>
-        <a href="https://www.meetup.com/kayraph/"><img src="soc\meetup.png"></a>
-        <a href="https://twitter.com/DjKay_25"><img src="soc\twitter.png"></a>
-        <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\inst.png"></a>
-        <a href="https://www.facebook.com/code.pappa.9"><img src="soc\facebook.png"></a>
-    </div>
-    <div class="container">
-        <br><br><br>
-        <div class="bot">
-            <h1 style="text-align: center;">About me</h1>
-            
-        </div><br><br>
-        <p style="color: white; font-size: larger; text-align: justify; background-color: darkgray; border-radius: 15px; padding: 10px;">I still remember the first time that I produced the words “Hello World” in the console of my first computer application,
-        and it is there and then that I realized that my first journey among many in the world of web app development had just
-        began.
-        Web app development has never been “just a job” for me, it has offered an engaging challenge that has continually helped
-        me to learn more and improve my skills in creating high-quality applications. What started as a simple “Hello-world” has
-        now become a passionate and more exciting experience that only gets better as the years go by.
-</p>
-        <div class="con" style="color: white;">
-            <h1 style="color: white; text-align: justify;"><u>Contacts;</u></h1>
-        <p
-            style="letter-spacing: 2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-            <img src="soc\email.png" style="height: 25px;"><b style="font-size: x-large; color: aqua;">     Kevmugita@gmail.com</b><br><img src="soc\phone.png"
-                    style="height: 25px;"><b style="font-size: x-large;" >      0710288908</b><br><b style="font-size: x-large;"><img src="soc\phone.png" style="height: 25px;"> 0736774779</b></p><br>
-            
+<script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt1').innerHTML =
+            h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) { i = "0" + i }; // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+<body onload="startTime()" style="margin:0;">
+    <!-- <div style="display:none;" id="myDiv" class="animate-bottom"> -->
+        <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 500);
+            }
+
+            function showPage() {
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
+        <div class="nav">
+            <a href="index.html">
+                <p style="float: left;">HOME</p>
+            </a>
+            <a href="https://github.com/Kay-raph"><img src="soc\gthub.png"></a>
+            <a href="https://www.pinterest.com/kayraph/"><img src="soc\pint.png"></a>
+            <a href="https://linkedin.com/in/kevin-mugita-13848b154"><img src="soc\linkin.png"></a>
+            <a href="https://twitter.com/DjKay_25"><img src="soc\twee.png"></a>
+            <a href="https://www.instagram.com/kayraph_illest/"><img src="soc\instag.png"></a>
+            <a href="https://www.facebook.com/code.pappa.9"><img src="soc\face.png"></a>
         </div>
-        <div class="educ">
-            <h1 style="color: white;text-align: justify;"><u>Education</u></h1>
-            <ul style="color: white;"><b>
-            <li style="font-size: x-large; color: wheat;">Moringa School.</li><p><b style="color: crimson;">Software Engineering</b> - November 2019 to January 2020</p>
-            <li style="font-size: x-large; color: wheat;">eMobilis Institute of Technology.</li>
-            <p><b style="color: crimson; ">Mobile Application Development</b> - August 2016 to January 2017</p>
-            <li style="font-size: x-large; color: wheat;">Jomo Kenyatta University of Technology & Agriculture.</li>
-            <p><b style="color: crimson;">Business Information Technology</b> - May 2014 to September 2015</p>
-        </b></ul>
-        </div>
-        <div class="hob">
+        <div class="container">
+            <br><br><br>
+            <div class="bot">
+                <h1 style="text-align: center;">About me</h1>
+
+            </div><br><br>
+            <p
+                style="color: white; font-size: larger; text-align: justify; background-color: darkgray; border-radius: 15px; padding: 10px;">
+                I still remember the first time that I produced the words “Hello World” in the console of my first
+                computer application,
+                and it is there and then that I realized that my first journey among many in the world of web app
+                development had just
+                began.
+                Web app development has never been “just a job” for me, it has offered an engaging challenge that has
+                continually helped
+                me to learn more and improve my skills in creating high-quality applications. What started as a simple
+                “Hello-world” has
+                now become a passionate and more exciting experience that only gets better as the years go by.
+            </p>
+            <div class="con" style="color: white;">
+                <h1 style="color: white; text-align: justify;"><u>Contacts;</u></h1>
+                <p
+                    style="letter-spacing: 2px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    <img src="soc\mail.png"><b style="color: aqua;"> Kevmugita@gmail.com</b><br><img
+                        src="soc\call.png"><b> 0710288908</b><br><b><img src="soc\call.png"> 0736774779</b></p><br>
+
+            </div>
+            <div class="educ">
+                <h1 style="color: white;text-align: justify;"><u>Education</u></h1>
+                <ul style="color: white;"><b>
+                        <li style="font-size: x-large; color: wheat;">Moringa School.</li>
+                        <p><b style="color: crimson;">Software Engineering</b> - November 2019 to January 2020</p>
+                        <li style="font-size: x-large; color: wheat;">eMobilis Institute of Technology.</li>
+                        <p><b style="color: crimson; ">Mobile Application Development</b> - August 2016 to January 2017
+                        </p>
+                        <li style="font-size: x-large; color: wheat;">Jomo Kenyatta University of Technology &
+                            Agriculture.</li>
+                        <p><b style="color: crimson;">Business Information Technology</b> - May 2014 to September 2015
+                        </p>
+                    </b></ul>
+            </div>
+            <div class="hob">
+
+                <h1 style="color: white;text-align: justify;"><u>Hobbies & interests</u></h1>
+                <ul style="color: white;"><b>
+                        <li id="cc"><img src="hobbies/com.png" style="height: 25px; width: 25px;"> Computer,Video Games
+                            and Coding</li><br>
+                        <li id="tr"><img src="hobbies/fly.png" style="height: 25px; width: 25px;"> Travelling</li><br>
+                        <li id="rd"><img src="hobbies/book.png" style="height: 25px; width: 25px;"> Reading</li><br>
+                        <li id="ms"><img src="hobbies/drum.png" style="height: 25px; width: 25px;"> Music and Musical
+                            instruments(Guitar,Drumsets,Jimbi)</li><br>
+                        <li id="sf"><img src="hobbies/scifi.png" style="height: 25px; width: 25px;"> Sci-fi Movies</li>
+                        <br>
+                        <li id="gn"><img src="hobbies/nerd.png" style="height: 25px; width: 25px;"> General knowledge
+                            Research</li><br>
+                        <li id="sp"><img src="hobbies/game.png" style="height: 25px; width: 25px;"> Sports(Football,
+                            Basketball and Table tennis)</li>
+                    </b>
+                </ul>
+            </div>
+            <!-- /*SKILSS BAR*/ -->
+            <h1 style="font-size: 5vw;">Skills level</h1>
             
-            <h1 style="color: white;text-align: justify;"><u>Hobbies & interests</u></h1>
-            <ul style="color: white;"><b>
-            <li id="cc"><img src="hobbies/com.png" style="height: 25px; width: 25px;"> Computer,Video Games and Coding</li><br>
-            <li id="tr"><img src="hobbies/fly.png" style="height: 25px; width: 25px;"> Travelling</li><br>
-            <li id="rd"><img src="hobbies/book.png" style="height: 25px; width: 25px;"> Reading</li><br>
-            <li id="ms"><img src="hobbies/drum.png" style="height: 25px; width: 25px;"> Music and Musical instruments(Guitar,Drumsets,Jimbi)</li><br>
-            <li id="sf"><img src="hobbies/scifi.png" style="height: 25px; width: 25px;"> Sci-fi Movies</li><br>
-            <li id="gn"><img src="hobbies/nerd.png" style="height: 25px; width: 25px;"> General knowledge Research</li><br>
-            <li id="sp"><img src="hobbies/game.png" style="height: 25px; width: 25px;"> Sports(Football, Basketball and Table tennis)</li>
-            </b>
-            </ul>
-        </div>
-    <div class="bck"><a style="text-decoration: none;" href="index.html"><b>
-                <h4>BACK</h4><a style="text-decoration: none;" href="skills.html">
+            <button style="font-size: small; border-radius: 10px; background-color: crimson;" onclick="move1()">HTML</button>
+            <div class="contain">
+                <div class="mys html" id="myBar1" style="width:0%">0%</div>
+            </div>
+            <script>
+                function move1() {
+                    var elem = document.getElementById("myBar1");
+                    var width = 0;
+                    var id = setInterval(frame, 50);
+                    function frame() {
+                        if (width >= 93) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+            </script>
+            <br>
+            <button style="font-size: small; border-radius: 10px; background-color: #2196F3;" onclick="move2()">CSS</button>
+            <div class="contain">
+                <div class="mys css" id="myBar2" style="width:0%">0%</div>
+            </div>
+            <script>
+                function move2() {
+                    var elem = document.getElementById("myBar2");
+                    var width = 0;
+                    var id = setInterval(frame, 50);
+                    function frame() {
+                        if (width >= 85) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+            </script>
+            <br>
+            <button style="font-size: small; border-radius: 10px; background-color: red;" onclick="move3()">JavaScript</button>
+            <div class="contain">
+                <div class="mys js" id="myBar3" style="width:0%">0%</div>
+            </div>
+            <script>
+                function move3() {
+                    var elem = document.getElementById("myBar3");
+                    var width = 0;
+                    var id = setInterval(frame, 50);
+                    function frame() {
+                        if (width >= 74) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+            </script>
+            <br>
+            <button style="font-size: small; border-radius: 10px; background-color: blue;" onclick="move4()">PHP</button>
+            <div class="contain">
+                <div class="mys php" id="myBar4" style="width:0%">0%</div>
+            </div>
+            <script>
+                function move4() {
+                    var elem = document.getElementById("myBar4");
+                    var width = 0;
+                    var id = setInterval(frame, 50);
+                    function frame() {
+                        if (width >= 60) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+            </script>
+            <br>
+            <button style="font-size: small; border-radius: 10px; background-color: blue;" onclick="move5()">Java</button>
+            <div class="contain">
+                <div class="mys java" id="myBar5" style="width:0%">0%</div>
+            </div>
+            <script>
+                function move5() {
+                    var elem = document.getElementById("myBar5");
+                    var width = 0;
+                    var id = setInterval(frame, 50);
+                    function frame() {
+                        if (width >= 69) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+            </script>
+            <style>
+                h1 {
+                    color: white;
+                }
+            
+                .contain {
+                    margin: 5px;
+                    width: 100%;
+                    background-color: #ddd;
+                    box-shadow: 0 0 0 2px darkgrey;
+                    border-radius: 5px;
+                }
+            
+                .mys {
+                    border-radius: 10px 0px 0px 10px;
+                    text-align: right;
+                    padding-right: 20px;
+                    line-height: 10px;
+                    color: white;
+                    font-size: x-small;
+                }
+            
+                .html {
+                    /* width: 93%; */
+                    background-color: crimson;
+                }
+            
+                .css {
+                    /* width: 85%; */
+                    background-color: #2196F3;
+                }
+            
+                .js {
+                    /* width: 67%; */
+                    background-color: red;
+                }
+            
+                .php {
+                    /* width: 60%; */
+                    background-color: blue;
+                }
+            
+                .java {
+                    /* width: 69%; */
+                    background-color: purple;
+                }
+            </style>
+            <br>
+            <div class="bck"><a style="text-decoration: none;" href="index.html"><b>
+                        <h4>BACK</h4></a><a style="text-decoration: none;" href="skills.html">
                     <h4>NEXT</h4>
-                </a></a></b>
-               
+                </a></b>
+
+            </div>
+            <br><br>
+        </div>
+    <!-- CHATBOX -->
+    <button class="open-button" id="open-button" onclick="openform()"><img src="icons/email.png" height="20px"></button>
+    <div class="chat-popup" id="myform">
+        <form class='form-container'
+            action="https://gmail.us4.list-manage.com/subscribe/post?u=d5eb79108d5fd1b601ae1d1f0&amp;id=9e70a2b742"
+            method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <label for="msg"><b>Message</b></label><br>
+            <textarea placeholder="type message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+        </form>
     </div>
-    <br><br><br>
+        <script>
+            /*CHATBOX*/
+            function openform() {
+                document.getElementById("myform").style.display = "block";
+            }
+            function closeform() {
+                document.getElementById("myform").style.display = "none";
+            }
+        </script>
+        <div class="footer">
+            <div id="txt1"></div>
+            <p>&copy 2020|All rights reserved|Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a>
+            </p>
+        </div>
     </div>
-    <div class="footer">
-        <p>&copy 2020|All rights reserved|Designed by <a href="https://github.com/Kay-raph"><b>kevin raphael</b></a></p>
-    </div>
-    /*FUN JS SCRIPT ON HOBBIES*/
     <script>
-         $(document).ready(function () {
-                $("#cc").click(function () {
-                    alert("FIFA all the way....I love Visual studio code!!")
-         });
-         });
-         $(document).ready(function () {
-                $("#tr").click(function () {
-                    alert("Travelling relaxes my mind")
-         });
-         });
-         $(document).ready(function () {
-                $("#rd").click(function () {
-                    alert("Best read so far, 'THE TESTAMENT:John Grisham', 'THINK and GROW RICH:Napoleon Hill'.")
-         });
-         });
-         $(document).ready(function () {
-                $("#ms").click(function () {
-                    alert("Urban Pop and Trance....strumming guitar and thumping on drumsets is just wooow")
-         });
-         });
-         $(document).ready(function () {
-                $("#sf").click(function () {
-                    alert("Upgrade,Bloodshot,Lost in Space,Avengers series......ENDGAME")
-         });
-         });
-         $(document).ready(function () {
-                $("#gn").click(function () {
-                    alert("Google is my close friend")
-         });
-         });
-         $(document).ready(function () {
-                $("#sp").click(function () {
-                    alert("My favourite football team is Manchester united and favourite Basketball teams are L.A Lakers & Chicago bulls")
-         });
-         });
+        /*FUN JS SCRIPT ON HOBBIES*/
+        $(document).ready(function () {
+            $("#cc").click(function () {
+                alert("FIFA all the way....I love Visual studio code!!")
+            });
+        });
+        $(document).ready(function () {
+            $("#tr").click(function () {
+                alert("Travelling relaxes my mind")
+            });
+        });
+        $(document).ready(function () {
+            $("#rd").click(function () {
+                alert("Best read so far, 'THE TESTAMENT:John Grisham', 'THINK and GROW RICH:Napoleon Hill'.")
+            });
+        });
+        $(document).ready(function () {
+            $("#ms").click(function () {
+                alert("Urban Pop and Trance....strumming guitar and thumping on drumsets is just wooow")
+            });
+        });
+        $(document).ready(function () {
+            $("#sf").click(function () {
+                alert("Upgrade,Bloodshot,Lost in Space,Avengers series,ENDGAME but BREAKING BAD tops it all")
+            });
+        });
+        $(document).ready(function () {
+            $("#gn").click(function () {
+                alert("Google is my close friend")
+            });
+        });
+        $(document).ready(function () {
+            $("#sp").click(function () {
+                alert("My favourite football team is Manchester united and favourite Basketball teams are L.A Lakers & Chicago bulls")
+            });
+        });
     </script>
 </body>
+
 </html>
