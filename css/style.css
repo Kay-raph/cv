@@ -118,7 +118,7 @@ h4{
     -o-transition: ease-in-out 1.5s;
 }
 .skills a:hover{
-     color: aqua;
+     color: #2db9ae;
      transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
@@ -616,7 +616,7 @@ html{
   }
   .nav{
       height: 45px;
-      background-color: aqua;
+      background-color: #2db9ae;
   }
   .nav p{
       color: #ffffff;
@@ -629,7 +629,7 @@ html{
     margin: 12px;
 }
 .footer{
-    background-color: aqua;
+    background-color: #2db9ae;
       height: 60px;
 }
 .footer p{
@@ -667,7 +667,7 @@ html{
  .dj,
   .loops{
       width: 90%;
-      background-color: aqua;
+      background-color: #2db9ae;
   }
   .bot,
   .proj{
@@ -726,7 +726,7 @@ font-weight: bold;
     width: 100px;
     height: 5%;
     box-shadow: 0 0 25px black;
-    background-color: aqua;
+    background-color: #2db9ae;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -788,7 +788,7 @@ font-weight: bold;
     -o-border-radius: 15px;
 }
 #open-button{
-    background-color: aqua;
+    background-color: #2db9ae;
 }
 .chat-popup{
     display: none;
@@ -800,7 +800,7 @@ font-weight: bold;
 .form-container{
     max-width: 300px;
     padding: 10px;
-    background-color: aqua;
+    background-color: #2db9ae;
     z-index: 9;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -824,7 +824,7 @@ font-weight: bold;
   margin: -75px 0 0 -75px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 6px solid aqua;
+  border-top: 6px solid #2db9ae;
   width: 20px;
   height: 20px;
   -webkit-animation: spin 2s linear infinite;
