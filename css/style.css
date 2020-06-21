@@ -2,10 +2,12 @@
 .nav{
     scroll-behavior: smooth;
     top: 0;
-    background-color: darkgrey;
+    background-color: darkgray;
     height: 60px;
     position: fixed;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 .nav img{
     width: 35px;
@@ -22,6 +24,7 @@
     font-weight: bolder;
 }
 .container{
+    position: relative;
   margin-right: 100px;
   margin-left: 80px;
   padding: 20px;
@@ -83,6 +86,7 @@ h4{
     -o-transition: 1.5s;
 }
 .about:hover{
+    background-color: rgba(0, 0, 0, 0.5);
      transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
@@ -95,18 +99,19 @@ h4{
     -o-transform: scale(1.1);
 }
 .about{
-    box-shadow: 6px 6px darkgray;
-    border-radius: 10px;
-    padding: 6px;
+    box-shadow: 2px darkgray;
+    background-color: #2db9ae;
+    border-radius: 15px;
+    padding: 8px;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .skills a{
     text-decoration: none;
@@ -126,30 +131,32 @@ h4{
     -o-transition: 1.5s;
 }
 .skills{
-     box-shadow: 6px 6px darkgray;
-     border-radius: 10px;
-     padding: 6px;
+     box-shadow: 2px darkgray;
+     background-color: crimson;
+     border-radius: 15px;
+     padding: 8px;
      transition: 1s;
-     -webkit-transition:;
-     -moz-transition:;
-     -ms-transition:;
-     -o-transition:;
-     -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-     -ms-border-radius: 10px;
-     -o-border-radius: 10px;
+     -webkit-transition: 1s;
+     -moz-transition: 1s;
+     -ms-transition: 1s;
+     -o-transition: 1s;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     -ms-border-radius: 15px;
+     -o-border-radius: 15px;
 }
 .skills:hover{
+    background-color: rgba(0, 0, 0, 0.5);
      transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
     -ms-transition: 1.5s;
     -o-transition: 1.5s;
     transform: scale(1.1);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: 1s;
+    -moz-transform: 1s;
+    -ms-transform: 1s;
+    -o-transform: 1s;
 }
 .skils{
     color: #0d8df0;
@@ -166,7 +173,7 @@ h4{
 }
 .project a{
     text-decoration: none;
-    color: white;
+    color: #2db9ae;
     transition: ease-in-out 1.5s;
     -webkit-transition: ease-in-out 1.5s;
     -moz-transition: ease-in-out 1.5s;
@@ -174,7 +181,7 @@ h4{
     -o-transition: ease-in-out 1.5s;
 }
 .project a:hover{
-     color: black;
+     color: white;
      transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
@@ -182,30 +189,32 @@ h4{
     -o-transition: 1.5s;
 }
 .project{
-    box-shadow: 6px 6px darkgray;
-    border-radius: 10px;
-    padding: 6px;
+    box-shadow: 2px darkgray;
+    background-color: white;
+    border-radius: 15px;
+    padding: 8px;
      transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .project:hover{
+    background-color: rgba(0, 0, 0, 0.5);
      transition: 1.5s;
     -webkit-transition: 1.5s;
     -moz-transition: 1.5s;
     -ms-transition: 1.5s;
     -o-transition: 1.5s;
     transform: scale(1.1);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: 1.5s;
+    -moz-transform: 1.5s;
+    -ms-transform: 1.5s;
+    -o-transform: 1.5s;
 }
 .bot{
     color: #0d8df0;
